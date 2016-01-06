@@ -1,0 +1,9 @@
+/****************Style sheet specfic to the blog page***********************/
+
+#blogTitle.jumbotron {
+  background-color: red;
+  margin-bottom: 20px;
+}
+#blogPost {
+  
+}
