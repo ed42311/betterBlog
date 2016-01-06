@@ -1,0 +1,24 @@
+{
+  "name": "blogreset",
+  "version": "1.0.0",
+  "description": "This is a retooling of the blog agile-citadel",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ed42311/betterBlog.git"
+  },
+  "author": "Edward Weymouth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ed42311/betterBlog/issues"
+  },
+  "homepage": "https://github.com/ed42311/betterBlog#readme"
+}
