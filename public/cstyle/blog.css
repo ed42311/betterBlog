@@ -1,6 +1,7 @@
 /****************Style sheet specfic to the blog page***********************/
 #pic {
   visibility: hidden;
+  padding-right: 50px;
 }
 #text {
   visibility: hidden;
