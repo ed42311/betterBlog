@@ -5,6 +5,8 @@ $(window).scroll(function() {
 
       if (imagePos < topOfWindow+600) {
         $(this).addClass("slideRight");
+      } else {
+        $(this).removeClass("slideRight");
       }
   });
 });
@@ -16,6 +18,8 @@ $(window).scroll(function() {
 
       if (imagePos < topOfWindow+600) {
         $(this).addClass("slideLeft");
+      } else {
+        $(this).removeClass("slideLeft");
       }
   });
 });

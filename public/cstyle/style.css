@@ -12,7 +12,8 @@
   -webkit-flex-flow: column;
           flex-flow: column;
   margin-bottom: 2px;
-  max-width: 70%;
+  max-width: 100%;
+  max-height: 70%;
 }
 
 
