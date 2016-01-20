@@ -1,28 +1,18 @@
-$(window).scroll(function() {
-  $('#pic').each(function(){
-    var imagePos = $(this).offset().top;
-    var topOfWindow = $(window).scrollTop();
 
-      if (imagePos < topOfWindow+600) {
-        $(this).addClass("slideRight");
-      } else {
-        $(this).removeClass("slideRight");
-      }
+var moveItem = function(id, movement) {
+  $(window).scroll(function() {
+    $(id).each(function(){
+      var imagePos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+
+        if (imagePos < topOfWindow+600) {
+          $(this).addClass(movement);
+        } else {
+          $(this).removeClass(movement);
+        }
+    });
   });
-});
-
-$(window).scroll(function() {
-  $('#text').each(function(){
-    var imagePos = $(this).offset().top;
-    var topOfWindow = $(window).scrollTop();
-
-      if (imagePos < topOfWindow+600) {
-        $(this).addClass("slideLeft");
-      } else {
-        $(this).removeClass("slideLeft");
-      }
-  });
-});
+};
 
 $(window).scroll(function(){
   var divs = $('.title');
@@ -34,5 +24,5 @@ $(window).scroll(function(){
   $(".title").css("opacity", 1 - $(window).scrollTop() / 350);
 }); 
 
-
-
+moveItem("#text", "slideLeft");
+moveItem("#pic", "slideRight");

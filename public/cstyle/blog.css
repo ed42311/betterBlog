@@ -49,10 +49,14 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 section.module.parallax-1 {
-  background-image: url("../img/Pic2.jpg")
+  background-image: url("../img/Pic2.jpg");
 }
 section.module.parallax-2 {
-  background-image: url("../img/Pic3.jpg")
+  background-image: url("../img/Pic2.jpg");
+  margin-bottom: 0;
+}
+footer {
+  background-color: green;
 }
 .box-wrapper {
   -webkit-transition-duration: 600ms;
