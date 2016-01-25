@@ -8,7 +8,7 @@ app.set('port', (process.env.PORT || 3020));
 app.use(express.static('public'));
 
 app.get('/', function(req, res){
-  res.sendFile('public/index.html')
+  res.not('public/index.html')
   });
 
 app.listen(app.get('port'), function() {
