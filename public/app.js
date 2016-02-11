@@ -14,6 +14,7 @@ var moveItem = function(id, movement) {
   });
 };
 
+
 $(window).scroll(function(){
   var divs = $('.title');
   if($(window).scrollTop()<250){
@@ -26,3 +27,4 @@ $(window).scroll(function(){
 
 moveItem("#text", "slideLeft");
 moveItem("#pic", "slideRight");
+moveItem("#navbar", "fadeIn");

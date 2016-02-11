@@ -2,9 +2,12 @@
   max-height: 2000px;
   background-color: gray;
 }
+
 #indexTitleBox {
   height: 800px;
+  background-color: aliceblue;
 }
+
 #indexTitleBox h1, #indexTitleBox p {
     opacity: 0.0;
     -webkit-transition: all 500ms ease-in-out;
@@ -13,6 +16,7 @@
     -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out;
 }
+
 #indexTitleBox h1:hover, #indexTitleBox p:hover {
   opacity: 1.0;
   color: red;

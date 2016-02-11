@@ -3,9 +3,10 @@
   visibility: hidden;
   padding-right: 50px;
 }
-#text {
+#text, #navbar {
   visibility: hidden;
 }
+
 .container {
   max-width: 960px;
   margin: 0 auto;
