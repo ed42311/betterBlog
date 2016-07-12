@@ -3,10 +3,22 @@
 <head>
   <meta charset=utf-8>
   <title>Appending Content</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <style>
+    article {
+    width: 680px;
+    margin: auto;
+    }
+    blockquote.co {
+      float: right;
+      background: #e3e3e3;
+      font-size: 2em;
+      width: 35%;
+      align-text: center;
+    }
+  </style>
 </head>
-<body>'
-<a href="../../public/lessons.html">Back to Lessons</a>
+<body>
+<a href="/lessons.html">Back to Lessons</a>
   <h1>Article with block quotes</h1>
   <a href="https://www.youtube.com/watch?v=zsC-I57IhNs">This is the video Tutorial</a>'
 <article>
@@ -20,11 +32,7 @@
   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatem doloremque id praesentium cumque, minus eius iusto ea ducimus? Sit, odio! Saepe adipisci facere deserunt natus fugiat libero, odio cupiditate.
   </p>
 </article>
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
 <script>
 (function() {
   var co = $('article').find('span.co').each(function() {
@@ -37,7 +45,5 @@
 })();
 
 </script>
-<script src="app.js"></script>
 </body>
-
 </html>
