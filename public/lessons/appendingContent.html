@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+<head>
+  <meta charset=utf-8>
+  <title>Appending Content</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>'
+<a href="../../public/lessons.html">Back to Lessons</a>
+  <h1>Article with block quotes</h1>
+  <a href="https://www.youtube.com/watch?v=zsC-I57IhNs">This is the video Tutorial</a>'
+<article>
+  <h1> Post </h1>
+  <p><span class="co">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Necessitatibus numquam eligendi unde nisi esse aperiam, itaque, consectetur repellendus accusamus ratione atque excepturi fugit cumque non quasi quidem. Optio, commodi, accusamus.
+  </p>
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatem doloremque id praesentium cumque, minus eius iusto ea ducimus? Sit, odio! Saepe adipisci facere deserunt natus fugiat libero, odio cupiditate.
+  </p>
+  <p><span class="co">Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Necessitatibus numquam eligendi unde nisi esse aperiam, itaque, consectetur repellendus accusamus ratione atque excepturi fugit cumque non quasi quidem. Optio, commodi, accusamus.
+  </p>
+  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptatem doloremque id praesentium cumque, minus eius iusto ea ducimus? Sit, odio! Saepe adipisci facere deserunt natus fugiat libero, odio cupiditate.
+  </p>
+</article>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<script>
+(function() {
+  var co = $('article').find('span.co').each(function() {
+    var $this = $(this);
+    $('<blockquote></blockquote', {
+      class: 'co',
+      text: $this.text()
+    }).prependTo( $this.closest ('p') );
+    });
+})();
+
+</script>
+<script src="app.js"></script>
+</body>
+
+</html>
